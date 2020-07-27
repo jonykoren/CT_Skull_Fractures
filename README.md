@@ -36,6 +36,11 @@ CT_Skull_Fractures
        └── predict.ipynb
 ```       
     
+## Dataset:
+The dataset consists of 8.685 png images of actual brain CT scans, of which 1.532 show some
+form of broken skull (fracture or craniotomy) while the other 7.153 images do not. The images are
+grayscale png format, have been zoomed into the brain and cropped to 340x340 pixels. The
+images are a subset of the [RSNA-ASNR Intracranial Hemorrhage Detection Challenge image datasets and annotation files](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection)
 
 ## Training:
 * [train.py](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/train.py)
