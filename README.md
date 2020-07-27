@@ -1,4 +1,6 @@
 # CT_Skull_Fractures
+A skull fracture is a break in one or more of the eight bones that form the cranial portion of the skull, usually occurring as a result of blunt force trauma. If the force of the impact is excessive, the bone may fracture at or near the site of the impact and cause damage to the underlying structures within the skull such as the membranes, blood vessels, and brain. 
+
 ## pytorch & densenet161
 using deep convolutional networks to improve fractures prediction in skull CT scans
 
