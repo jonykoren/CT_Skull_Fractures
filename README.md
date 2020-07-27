@@ -34,6 +34,20 @@ CT_Skull_Fractures
        └── predict.ipynb
 ```       
     
+
+## Training:
+* [train.py](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/train.py)
+```
+python train.py
+```
+
+## Predict:
+* [predict.py](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/predict.py)
+```
+python predict.py
+```
+
+
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
 </p>
