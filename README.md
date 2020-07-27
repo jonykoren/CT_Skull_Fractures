@@ -53,3 +53,5 @@ python predict.py
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
 </p>
+
+<p align="center">feel free to ⭐️</p>
