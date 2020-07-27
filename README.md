@@ -54,4 +54,7 @@ python predict.py
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
 </p>
 
-<p align="center">feel free to ⭐️</p>
+## Author
+`Maintainer` [Jonatan Koren](https://jonykoren.github.io/) (jonykoren@gmail.com)
+
+### <p align="center">feel free to ⭐️</p>
