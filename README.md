@@ -35,11 +35,19 @@ CT_Skull_Fractures
    |   └── predict.ipynb
    └── data(folder)
        ├── train(folder)
-       |   ├── 10.png
-       |   ├── 11.png
+       |   ├── b(folder)
+       |   |   ├── 105.png
+       |   |   ├── 106.png
+       |   ├── nb(folder)
+       |       ├── 205.png
+       |       ├── 206.png       
        ├── test(folder)
-           ├── 1000.png
-           ├── 1001.png      
+           ├── b(folder)
+           |   ├── 1105.png
+           |   ├── 1106.png           
+           ├── nb(folder)    
+               ├── 2105.png
+               ├── 2106.png
 ```       
     
 ## Dataset:
@@ -47,6 +55,7 @@ The dataset consists of 8.685 png images of actual brain CT scans, of which 1.53
 form of broken skull (fracture or craniotomy) while the other 7.153 images do not. The images are
 grayscale png format, have been zoomed into the brain and cropped to 340x340 pixels. The
 images are a subset of the [RSNA-ASNR Intracranial Hemorrhage Detection Challenge image datasets and annotation files](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection)
+* Main task: Classification
 
 ## Training:
 * [train.py](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/train.py)
