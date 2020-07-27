@@ -56,8 +56,8 @@ python predict.py
 
 ## Interactive 
 #### Note: you can start by small training with the interactive notebooks:
-** [train.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/train.ipynb)
-** [predict.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/predict.ipynb)
+* [train.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/train.ipynb)
+* [predict.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/predict.ipynb)
 
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
