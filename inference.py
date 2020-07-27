@@ -31,8 +31,8 @@ transformations = transforms.Compose([
 
 # Load in each dataset and apply transformations using
 # the torchvision.datasets as datasets library
-train_set = datasets.ImageFolder("/homedtic/ikoren/skull/dat/train", transform = transformations)
-val_set = datasets.ImageFolder("/homedtic/ikoren/skull/dat/test", transform = transformations)
+train_set = datasets.ImageFolder("CT_Skull_Fractures/data/train", transform = transformations)
+val_set = datasets.ImageFolder("CT_Skull_Fractures/data/test", transform = transformations)
 
 
 
@@ -81,7 +81,7 @@ criterion = nn.NLLLoss()
 optimizer = optim.Adam(model.classifier.parameters())
 
 # Load model from path
-PATH = '/homedtic/ikoren/skull/nuevo/ok/model_outputs/mymodel.pth'
+PATH = 'CT_Skull_Fractures/model_outputs/mymodel.pth'
 
 # Load model - starting inference
 net = model
@@ -94,10 +94,10 @@ outputs = net(images)
 classes = ('b', 'nb')
 
 # Load probs. 
-lossiloss = np.load("/homedtic/ikoren/skull/nuevo/ok/model_outputs/lossiloss.npy")
-valiloss = np.load("/homedtic/ikoren/skull/nuevo/ok/model_outputs/valiloss.npy")
-acc = np.load("/homedtic/ikoren/skull/nuevo/ok/model_outputs/acc.npy")
-epoc = np.load("/homedtic/ikoren/skull/nuevo/ok/model_outputs/epoc.npy")
+lossiloss = np.load("CT_Skull_Fractures/model_outputs/model_outputs/lossiloss.npy")
+valiloss = np.load("CT_Skull_Fractures/model_outputs/model_outputs/valiloss.npy")
+acc = np.load("CT_Skull_Fractures/model_outputs/model_outputs/acc.npy")
+epoc = np.load("CT_Skull_Fractures/model_outputs/model_outputs/epoc.npy")
 
 _, predicted = torch.max(outputs, 1)
 
@@ -110,7 +110,7 @@ def imshow(img):
     img = img / 2 + 0.5  # unnormalize image
     npimg = img.numpy()
     plt.imshow(np.transpose(npimg, (1, 2, 0)))
-    plt.savefig("/homedtic/ikoren/skull/nuevo/ok/plots/pretrained_imgs.png")
+    plt.savefig("CT_Skull_Fractures/plots/pretrained_imgs.png")
     #plt.show()
 
 
@@ -168,7 +168,7 @@ plt.legend(['Loss', 'Val Loss'], loc='upper right')
 plt.title("Train Loss", size=28)
 plt.xlabel("Epochs", size=20)
 plt.ylabel("Loss", size=20)
-plt.savefig("/homedtic/ikoren/skull/nuevo/ok/plots/loss.png")
+plt.savefig("CT_Skull_Fractures/plots/loss.png")
 #plt.show()
 
 # Accuracy plot
@@ -179,7 +179,7 @@ plt.legend(['Train Accuracy'], loc='upper left')
 plt.title("Accuracy", size=28)
 plt.xlabel("Epochs", size=20)
 plt.ylabel("Accuracy", size=20)
-plt.savefig("/homedtic/ikoren/skull/nuevo/ok/plots/accuracy.png")
+plt.savefig("CT_Skull_Fractures/plots/accuracy.png")
 #plt.show()
 
 
@@ -209,7 +209,7 @@ print("===============")
 
 
 # Class Definition
-dataset = datasets.ImageFolder('/homedtic/ikoren/skull/dat/train', transform=transformations)
+dataset = datasets.ImageFolder('CT_Skull_Fractures/data/train', transform=transformations)
 classes1 = dataset.class_to_idx
 
 # Get probabilities - test , predictions
@@ -236,8 +236,8 @@ which_class = 1 # non-broken
 actuals, class_probabilities = test_class_probabilities(model, device, val_loader, which_class)
 
 # save probs. for future fast inference
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/class_probabilities_nb.npy", class_probabilities)
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/actuals_nb.npy", actuals)
+np.save("CT_Skull_Fractures/model_outputs/class_probabilities_nb.npy", class_probabilities)
+np.save("CT_Skull_Fractures/model_outputs/actuals_nb.npy", actuals)
 
 fpr, tpr, _ = roc_curve(actuals, class_probabilities)
 roc_auc = auc(fpr, tpr)
@@ -256,7 +256,7 @@ plt.xlabel('False Positive Rate', size=20)
 plt.ylabel('True Positive Rate', size=20)
 plt.title('ROC for non-broken class', size=28)
 plt.legend(loc="lower right")
-plt.savefig("/homedtic/ikoren/skull/nuevo/ok/plots/roc_nb.png")
+plt.savefig("CT_Skull_Fractures/plots/roc_nb.png")
 #plt.show()
 
 
@@ -264,8 +264,8 @@ which_class = 0 # broken
 actuals, class_probabilities = test_class_probabilities(model, device, val_loader, which_class)
 
 # save probs. for future fast inference
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/class_probabilities_b.npy", class_probabilities)
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/actuals_b.npy", actuals)
+np.save("CT_Skull_Fractures/model_outputs/class_probabilities_b.npy", class_probabilities)
+np.save("CT_Skull_Fractures/model_outputs/actuals_b.npy", actuals)
 
 fpr, tpr, _ = roc_curve(actuals, class_probabilities)
 roc_auc = auc(fpr, tpr)
@@ -284,6 +284,6 @@ plt.xlabel('False Positive Rate' , size = 20)
 plt.ylabel('True Positive Rate' , size = 20)
 plt.title('ROC for broken class' , size = 28)
 plt.legend(loc="lower right")
-plt.savefig("/homedtic/ikoren/skull/nuevo/ok/plots/roc_b.png")
+plt.savefig("CT_Skull_Fractures/plots/roc_b.png")
 #plt.show()
 
