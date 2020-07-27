@@ -1,5 +1,5 @@
 # CT_Skull_Fractures
-## densenet161
+## pytorch & densenet161
 using deep convolutional networks to improve fractures prediction in skull CT scans
 
 ## Recommended:
