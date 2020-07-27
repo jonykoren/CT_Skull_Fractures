@@ -33,7 +33,7 @@ CT_Skull_Fractures
        ├── train.ipynb
        └── predict.ipynb
 ```       
-          
+    
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
 </p>
