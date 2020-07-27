@@ -28,7 +28,7 @@ CT_Skull_Fractures
    ├── train.py
    ├── predict.py
    ├── README.md
-   └── interactive(folder)
+   ├── interactive(folder)
    |   ├── plots(folder)
    |   ├── model_outputs(folder)
    |   ├── train.ipynb
@@ -44,7 +44,7 @@ CT_Skull_Fractures
        └── test(folder)
            ├── b(folder)
            |   ├── 1105.png
-           |   ├── 1106.png           
+           |   └── 1106.png           
            └── nb(folder)    
                ├── 2105.png
                └── 2106.png
