@@ -18,11 +18,10 @@ mkdir plots/
 mkdir model_outputs/
 ```
 
-## Directory Structure
+#### Directory Structure
 ```
 CT_Skull_Fractures
-└──|
-   ├── data(folder)
+└──├ data(folder)
    ├── plots(folder)
    ├── model_outputs(folder)
    ├── train.py
