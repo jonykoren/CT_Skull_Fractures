@@ -54,6 +54,8 @@ python train.py
 python predict.py
 ```
 
+* Note: you can start by small training with the interactive notebooks:
+** xyz
 
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
