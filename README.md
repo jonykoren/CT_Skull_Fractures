@@ -23,7 +23,7 @@ mkdir model_outputs/
 #### Directory Structure:
 ```
 CT_Skull_Fractures
-└──├── plots(folder)
+   └── plots(folder)
    ├── model_outputs(folder)
    ├── train.py
    ├── predict.py
@@ -37,17 +37,17 @@ CT_Skull_Fractures
        ├── train(folder)
        |   ├── b(folder)
        |   |   ├── 105.png
-       |   |   ├── 106.png
-       |   ├── nb(folder)
+       |   |   └── 106.png
+       |   └── nb(folder)
        |       ├── 205.png
-       |       ├── 206.png       
-       ├── test(folder)
+       |       └── 206.png       
+       └── test(folder)
            ├── b(folder)
            |   ├── 1105.png
            |   ├── 1106.png           
-           ├── nb(folder)    
+           └── nb(folder)    
                ├── 2105.png
-               ├── 2106.png
+               └── 2106.png
 ```       
     
 ## Dataset:
