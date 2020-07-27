@@ -21,17 +21,18 @@ mkdir model_outputs/
 ## Directory Structure
 ```
 CT_Skull_Fractures
-├── data(folder)
-├── plots(folder)
-├── model_outputs(folder)
-├── train.py
-├── predict.py
-├── README.md
-└── interactive(folder)
-    ├── plots(folder)
-    ├── model_outputs(folder)
-    ├── train.ipynb
-    └── predict.ipynb
+└──|
+   ├── data(folder)
+   ├── plots(folder)
+   ├── model_outputs(folder)
+   ├── train.py
+   ├── predict.py
+   ├── README.md
+   └── interactive(folder)
+       ├── plots(folder)
+       ├── model_outputs(folder)
+       ├── train.ipynb
+       └── predict.ipynb
 ```       
           
 <p align="center">
