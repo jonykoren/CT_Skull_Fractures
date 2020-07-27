@@ -31,8 +31,8 @@ transformations = transforms.Compose([
 
 # Load in each dataset and apply transformations using
 # the torchvision.datasets as datasets library
-train_set = datasets.ImageFolder("/homedtic/ikoren/skull/dat/train", transform = transformations)
-val_set = datasets.ImageFolder("/homedtic/ikoren/skull/dat/test", transform = transformations)
+train_set = datasets.ImageFolder("CT_Skull_Fractures/data/train", transform = transformations)
+val_set = datasets.ImageFolder("CT_Skull_Fractures/data/test", transform = transformations)
 
 
 
@@ -168,12 +168,12 @@ model.eval()
 
 
 # save model for future fast inference
-PATH = '/homedtic/ikoren/skull/nuevo/ok/model_outputs/mymodel.pth'
+PATH = 'CT_Skull_Fractures/model_outputs/mymodel.pth'
 torch.save(model.state_dict(), PATH)
 print("model saved successfuly!")
 
 # Loss, Val Loss, Accuracy, number of epochs
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/lossiloss.npy" ,  lossiloss)
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/valiloss.npy" , valiloss)
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/acc.npy" , acc)
-np.save("/homedtic/ikoren/skull/nuevo/ok/model_outputs/epoc.npy" , epoc)
+np.save("CT_Skull_Fractures/model_outputs/lossiloss.npy" ,  lossiloss)
+np.save("CT_Skull_Fractures/model_outputs/valiloss.npy" , valiloss)
+np.save("CT_Skull_Fractures/model_outputs/acc.npy" , acc)
+np.save("CT_Skull_Fractures/model_outputs/epoc.npy" , epoc)
