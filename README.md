@@ -11,7 +11,7 @@ using deep convolutional networks to improve fractures prediction in skull CT sc
 * sklearn=0.20.1
 * PIL=7.2.0
 
-## Initalize:
+## Initialize:
 ```
 mkdir plots/
 mkdir model_outputs/
