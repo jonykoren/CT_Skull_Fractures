@@ -83,7 +83,7 @@ python predict.py
 * [train.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/train.ipynb)
 * [predict.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/predict.ipynb)
 
-## <p align="only 5 epochs gives >88% AUC</p>
+## <p align="center">"only 5 epochs gives >88% AUC</p>
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/roc_5epochs.png?raw=true">
 </p>
