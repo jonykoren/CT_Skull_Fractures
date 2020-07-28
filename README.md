@@ -1,10 +1,6 @@
 # CT Skull Fractures
 A skull fracture is a break in one or more of the eight bones that form the cranial portion of the skull, usually occurring as a result of blunt force trauma. If the force of the impact is excessive, the bone may fracture at or near the site of the impact and cause damage to the underlying structures within the skull such as the membranes, blood vessels, and brain. [wikipedia](https://en.wikipedia.org/wiki/Skull_fracture)
 
-<p align="center">
-  <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
-</p>
-
 
 ## pytorch & densenet161
 using deep convolutional networks to improve fractures prediction in skull CT scans
@@ -83,7 +79,11 @@ python predict.py
 * [train.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/train.ipynb)
 * [predict.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/interactive/predict.ipynb)
 
-## <p align="center">"only 5 epochs gives >88% AUC</p>
+<p align="center">
+  <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/gif.gif?raw=true">
+</p>
+
+## <p align="center">only 5 epochs gives >88% AUC</p>
 <p align="center">
   <img src="https://github.com/jonykoren/CT_Skull_Fractures/blob/master/img/roc_5epochs.png?raw=true">
 </p>
