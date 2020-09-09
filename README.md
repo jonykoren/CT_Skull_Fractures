@@ -58,8 +58,8 @@ grayscale png format, have been zoomed into the brain and cropped to 340x340 pix
 images are a subset of the [RSNA-ASNR Intracranial Hemorrhage Detection Challenge image datasets and annotation files](https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection)
 * Main task: Classification
 
-## Preprocessing:
-* [preprocessing.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/preprocessing.ipynb)
+## Data Preparation:
+* [Data_Preparation.ipynb](https://github.com/jonykoren/CT_Skull_Fractures/blob/master/Data_Preparation.ipynb)
 
 
 ## Training:
