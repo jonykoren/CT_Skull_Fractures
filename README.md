@@ -91,4 +91,4 @@ python predict.py
 ### <p align="center">feel free to ⭐️</p>
 
 ## Author
-`Maintainer` [Jonatan Koren](https://jonykoren.github.io/) (jonykoren@gmail.com)
+`Maintainer` Jonatan Koren
